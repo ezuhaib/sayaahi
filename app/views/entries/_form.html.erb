@@ -1,0 +1,14 @@
+<%= bootstrap_form_for @entry , html:{class:"minimalistic"} do |f| %>
+<div id="form_box">
+
+	<div id="head">
+	<span>Write your observation or hypothesis here...</span>
+	<%= f.submit :Post , class:"btn pull-right" %>
+	</div>
+
+	<div id="body">
+    <%= f.text_area :body , hide_label: true , placeholder: "Here ya go..." %>
+	</div>
+
+</div>
+<% end %>
