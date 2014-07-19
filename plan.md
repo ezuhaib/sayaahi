@@ -1,0 +1,3 @@
+- Allow tagging of observations.
+- Allow tagging within text using hashtags.
+- Implement special tags such as "observation" , "hypothesis"

@@ -1,0 +1,19 @@
+class Text
+
+# Initialize a text object by passing into it bodies
+# of text. Use it to format text, perform advanced
+# validations, and applying tokens and filters.
+
+  def initialize(text)
+    @text = text
+  end
+
+  def extract_tags
+  	@text.scan(Text.hashtag_regex).flatten
+  end
+
+  def self.hashtag_regex
+  	/(?:^|[\s"'])(?:#)([a-z_]+)(?=[\s.!?"']|$)/im #http://rubular.com/r/4rHo3dowRg
+  end
+
+end
